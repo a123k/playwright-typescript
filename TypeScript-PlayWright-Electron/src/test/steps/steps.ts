@@ -10,7 +10,7 @@ let page: Page;
 
 
 Given('I launch the electron app', async function () {
- const appPath = path.resolve(__dirname, '/home/aswathy/Documents/repo/software-testing/beta_bdd_tests/sample_app/hash'); 
+ const appPath = path.resolve(__dirname, path.resolve(__dirname, '../../../sample_app/hash'); 
  const electronPath = path.join(__dirname, '../../../node_modules/.bin/electron');
  electronApp = await electron.launch({ args: [appPath], executablePath: electronPath });
  page = await electronApp.firstWindow();
