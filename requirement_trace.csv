@@ -1,0 +1,5 @@
+requirements	test	outcome
+@REQ-1,	TC-1 Verify launch screen	Passed
+@REQ-2	TC-1 Verify launch screen	Passed
+@REQ-1,	TC-2 Verify Security Scanning	Failed
+@REQ-2	TC-2 Verify Security Scanning	Failed

@@ -1,0 +1,24 @@
+{
+    "default": {
+        "formatOptions": {
+            "snippetInterface": "async-await"
+        },
+        "paths": [
+            "src/test/features/"
+        ],
+        "dryRun": false,
+        "require": [
+            "src/**/*.ts"
+        ],
+        "requireModule": [
+            "ts-node/register"
+        ],
+        "format": [
+            "progress-bar",
+            "json:./test-results/json/report.json"
+        ]
+
+    }
+     
+
+}

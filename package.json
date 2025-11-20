@@ -1,0 +1,23 @@
+{
+  "name": "eltron_app_palywright_typescript",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "pretest": "mkdir -p test-results",
+    "test": "node --loader ts-node/esm node_modules/.bin/cucumber-js --config cucumber.mjs;  node --loader ts-node/esm src/helper/report.cjs",
+    "test:tag": "node --loader ts-node/esm node_modules/.bin/cucumber-js --config cucumber.mjs --tags \"$TAG\""
+  },
+  "dependencies": {
+    "electron": "^36.4.0",
+    "playwright": "^1.53.0",
+    "typescript": "^5.8.3",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.53.1",
+    "@types/node": "^24.0.3",
+    "multiple-cucumber-html-reporter": "^3.9.3",
+    "ts-node": "^10.9.2"
+  }
+}
